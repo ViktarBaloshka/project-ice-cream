@@ -1,0 +1,243 @@
+%button {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 24px;
+  min-width: 62.4px;
+  font-family: $primary-font;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border: none;
+  border-radius: 22px;
+}
+
+//contacts-button
+.contacts__button {
+  @extend %button;
+  width: 161px;
+  min-height: 44px;
+  background-color: $main-accent-color;
+  color: $main-light-color;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color $duration $function;
+  &:hover,
+  &:focus {
+    background-color: #d41342;
+  }
+  @media screen and(min-width: 768px) {
+    width: 191px;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 198px;
+  }
+  &--light {
+    background-color: $main-background-color;
+    color: $main-accent-color;
+    margin-top: 10px;
+    transition: background-color $duration $function;
+    @media screen and(min-width:768px) {
+      width: 184px;
+      margin-top: 0;
+    }
+    @media screen and(min-width: 1280px) {
+      width: 180px;
+    }
+    &:hover,
+    &:focus {
+      background-color: $button-hover-color;
+    }
+  }
+}
+
+// Hero / Header btn
+.menu-btn {
+  @extend %button;
+
+  margin: 0;
+  width: 209px;
+  height: 44px;
+  margin-bottom: 19px;
+  color: $main-accent-color;
+  transition: background-color $duration $function;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+
+  @media screen and(min-width:1280px) {
+    display: none;
+  }
+}
+
+.burger-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  stroke: $main-accent-color;
+
+  transition: stroke $duration $function;
+
+  &:hover,
+  &:focus {
+    stroke: $button-hover-color;
+  }
+
+  @media screen and(min-width:768px) {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid $main-light-color;
+  border-radius: 50%;
+
+  stroke: $main-light-color;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+
+  transition: stroke $duration $function, border-color $duration $function,
+    transform $duration ease-in-out;
+
+  &:hover,
+  &:focus {
+    stroke: $button-accent-hover-color;
+    border-color: $button-accent-hover-color;
+    transform: rotate(90deg);
+  }
+}
+
+.header-btn {
+  @extend %button;
+
+  min-width: 180px;
+  height: 44px;
+  color: $main-accent-color;
+
+  transition: background-color $duration $function;
+
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+
+  @media screen and(max-width:1279px) {
+    min-width: 159px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    margin: 0;
+    left: 110px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
+
+.btn-icon {
+  margin-left: 12px;
+  stroke: $main-accent-color;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  cursor: pointer;
+  border-radius: 22px;
+  border: none;
+  color: $main-accent-color;
+}
+
+.hero-button__primary {
+  width: 104px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $main-light-color;
+  background-color: $main-accent-color;
+
+  transition: background-color $duration $function;
+
+  &:hover,
+  &:focus {
+    background-color: $button-accent-hover-color;
+  }
+}
+
+.hero-button__secondary {
+  width: 138px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  color: $main-accent-color;
+  background-color: $main-light-color;
+
+  transition: background-color $duration $function;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
+
+.hero-tittle__btn {
+  display: flex;
+  margin-bottom: 19px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 59px;
+  }
+}
+
+.milk-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-light-color;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+
+  transition: background-color $duration $function;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
+// /Hero / Header btn

@@ -1,0 +1,186 @@
+.site-footer {
+  position: relative;
+  background: rgba(255, 245, 246, 0.8);
+  padding-top: 56px;
+  @media screen and (min-width: 768px) {
+    padding-top: 82px;
+  }
+}
+.site-footer_container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+.footer-subject {
+  margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-bottom: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 97px;
+  }
+}
+.footer-subject__title {
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  max-width: 223px;
+  margin-bottom: 17px;
+  color: $secondary-accent-color;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    max-width: 340px;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    max-width: 472px;
+    margin-bottom: 15px;
+  }
+}
+.footer-subject__text {
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 200px;
+  color: $main-accent-color;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    max-width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.137;
+    max-width: 477px;
+  }
+}
+.media {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
+}
+.media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  fill: $main-light-color;
+  background: $svg-background-color;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+.media__link:hover,
+.media__link:focus {
+  background: $svg-background-color-hover;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.media__svg.githib__svg,
+.media__svg.facebook__svg {
+  width: 20px;
+  height: 20px;
+}
+.media__svg.telegram__svg {
+  width: 20px;
+  height: 15px;
+}
+.media__item:not(:last-child) {
+  margin-right: 28px;
+}
+.footer-media {
+  margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+}
+.footer-media__text {
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  color: $main-dark-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+.footer-media__link {
+  color: $main-accent-color;
+}
+.footer-copyright {
+  padding: 22px 0;
+  @media screen and (min-width: 768px) {
+    padding-top: 29px;
+    padding-bottom: 18px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+}
+
+.footer-copyright__text {
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: $secondary-dark-color;
+  max-width: 149px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 276px;
+    margin: 0 0;
+  }
+}
+
+.footer-copyright__text::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: $footer-line-color;
+  width: 100%;
+  height: 1px;
+  top: 81.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (min-width: 768px) {
+    top: 84%;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 88%;
+  }
+}

@@ -1,0 +1,126 @@
+.about {
+  text-align: start;
+  padding-top: 125px;
+  padding-bottom: 19px;
+  background: rgba(255, 245, 246, 0.8);
+
+  background-image: url('../images/mobile/about/bckg-milk.png');
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  background-size: contain;
+  @media screen and (min-width: 768px) {
+    background-image: none;
+    padding-bottom: 33px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/desktop/about/bckg-milk.png');
+    background-position: 50% 90%;
+    padding-bottom: 19px;
+  }
+}
+
+.about__label {
+  @include font('Titan One', 18px, normal, 1.16, 0.04em, $hero-secondary-background-color);
+
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    @include font('Titan One', 26px, normal, 1.15, 0.04em, $hero-secondary-background-color);
+  }
+  @media screen and (min-width: 1280px) {
+    text-align: center;
+    @include font('Titan One', 30px, normal, 1.13, 0.04em, $hero-secondary-background-color);
+  }
+}
+
+.about__title {
+  @include font('Titan One', 34px, normal, 1.14, 0.04em, $main-accent-color);
+  text-transform: uppercase;
+
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    @include font('Titan One', 48px, normal, 1.14, 0.04em, $main-accent-color);
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 55px;
+    @include font('Titan One', 58px, normal, 1.13, 0.04em, $main-accent-color);
+  }
+}
+
+.about-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    align-items: center;
+  }
+}
+
+.about__img {
+  margin-bottom: 46px;
+  height: auto;
+  min-width: 280px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.about__text {
+  padding: 0 30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+  }
+}
+
+.about__text--top {
+  @include font('DM Sans', 12px, 500, 1.62, 0.04em, $main-dark-color);
+
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    @include font('DM Sans', 14px, 500, 1.76, 0.04em, $main-dark-color);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font('DM Sans', 16px, 500, 1.76, 0.04em, $main-dark-color);
+  }
+}
+
+.abour__text--bottom {
+  margin-bottom: 20px;
+  @include font('DM Sans', 12px, 500, 1.62, 0.04em, $secondary-dark-color);
+  @media screen and (min-width: 768px) {
+    @include font('DM Sans', 14px, 500, 1.76, 0.04em, $secondary-dark-color);
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font('DM Sans', 16px, 500, 1.76, 0.04em, $secondary-dark-color);
+    margin-bottom: 62px;
+  }
+}
+
+.about__btn {
+  @include font('DM Sans', 14px, bold, 1.28, 0.04em, $main-accent-color);
+
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  border: none;
+  @include transition(color, background, none, $duration, $function);
+  &:hover {
+    background: #ecebeb;
+  }
+}
+
+.about__icon {
+  margin-left: 13px;
+  stroke: $main-accent-color;
+}

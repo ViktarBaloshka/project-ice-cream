@@ -1,0 +1,268 @@
+.hero {
+  overflow: hidden;
+  min-height: 502px;
+  background-color: rgba(255, 184, 202, 0.8);
+
+  @media screen and (min-width: 768px) {
+    min-height: 399px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-height: 665px;
+  }
+}
+
+.hero .container {
+  position: relative;
+}
+
+.hero-heading {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-family: $secondary-font;
+
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $main-light-color;
+
+  width: 218px;
+
+  margin-bottom: 19px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+    width: 162px;
+  }
+
+  @media screen and(min-width:1280px) {
+    font-size: 38px;
+    line-height: 1.16;
+    width: 277px;
+    margin-bottom: 25px;
+  }
+}
+
+.hero-title__item {
+  margin-right: 15px;
+}
+
+.hero-accent {
+  font-family: $secondary-font;
+
+  font-size: 48px;
+  line-height: 0.96;
+
+  color: $main-accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+
+.hero-image__thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -23%);
+  width: 346px;
+  height: 420px;
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 368px;
+    transform: translate(-20%, -35%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 594px;
+    transform: translate(-35%, -38%);
+  }
+}
+
+.hero-circle {
+  background: $hero-secondary-background-color;
+  border-radius: 50%;
+  width: 346px;
+  height: 346px;
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 324px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+  }
+}
+
+.hero-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+  animation: hero-image 750ms linear;
+}
+
+@keyframes hero-image {
+  0% {
+    transform: translateX(-46%);
+  }
+}
+
+.girl-ice-image {
+  animation: girl-ice-image 750ms linear;
+}
+
+@keyframes girl-ice-image {
+  0% {
+    transform: translateX(200%);
+  }
+}
+
+.milk-thumb {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and(min-width:1280px) {
+    align-items: flex-end;
+  }
+}
+
+.milk-text__thumb {
+  width: 114px;
+  height: 75px;
+  padding-top: 20px;
+
+  @media screen and(min-width:1280px) {
+    width: 200px;
+    height: 125px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.milk-text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $main-light-color;
+  margin-bottom: 20px;
+
+  @media screen and(min-width:1280px) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.milk-svg {
+  fill: $main-accent-color;
+}
+
+.girl-thumb {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(21%);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    transform: translateY(12%);
+  }
+}
+
+.hero-label {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translate(-34px, -80%);
+
+  @media screen and (max-width: 1279px) {
+    right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-label__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.hero-label__text {
+  position: relative;
+  font-size: 28px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: left;
+
+  color: $main-accent-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-8px, -5px);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $main-background-color;
+    z-index: -1;
+
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.hero-label__span {
+  font-family: $primary-font;
+
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: $main-light-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
